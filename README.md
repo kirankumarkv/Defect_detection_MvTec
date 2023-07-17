@@ -11,9 +11,8 @@ Defect detection using Zero shot, Zero shot plus attributes and Few shot methods
 Result: Accuracy is too low
 Zero-shot code file zero_shot.ipynb
 
-and
-Mutiple class carpet, capsule, bottle, hazelnut from mvtec_anomaly_detection folder are utilized
-Again the accuracy is low. Accuracy: 0.2417
+3. Mutiple class carpet, capsule, bottle, hazelnut from mvtec_anomaly_detection are utilized to detect defects. 
+Since it has multiple low detection of defects, the accuracy is low. Accuracy: 0.2417
 
 4. Zero-Shot Learning + external knowledge (e.g., attributes, textual descriptions)
      to achieve zero-shot defect classification, attributes of capsule defects like 'crack', 'faulty_imprint', 'poke', 'scratch', 'squeeze' are given to attribute_classifier. some of the defect attribute chosen are
@@ -25,3 +24,7 @@ Again the accuracy is low. Accuracy: 0.2417
     'squeeze': ['deformed', 'compressed', 'misshapen']
 }
 Accuracy increased drastically, Accuracy: 0.6325
+
+5. The pre-trained resent is downloded using URL
+   https://www.kaggle.com/datasets/mhiro2/pytorch-pretrained-models?select=resnet50-19c8e357.pth
+   
